@@ -32,3 +32,10 @@
 6. Type : npm install
 7. Type : npm run dev
 8. You can now launch the website at the following url : http://localhost:5173/
+
+# Amélioration #
+
+Améliorer la partie account en rajoutant le nom d'utilisateur et des informations qui peuvent etre demandé a l'
+utilisateur
+Améliorer le css pour le rendre actractive. le CSS est assez miminaliste. J'ai pas eu le temps de trop bossé dessus a
+cause des 6H manquées ( grippe + compétition ) et des 3H perdu a début du module a cause d'une erreur de / 
