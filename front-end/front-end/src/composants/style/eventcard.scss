@@ -1,0 +1,139 @@
+
+.event-card {
+  background: white;
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  position: relative;
+
+
+  animation: fadeSlideUp 0.5s ease forwards;
+
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+.event-card h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  color: #222;
+}
+
+.event-card p {
+  margin: 0.35rem 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.event-badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+
+  background: #e74c3c;
+  color: white;
+
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+
+  box-shadow: 0 4px 12px rgba(231, 76, 60, 0.4);
+}
+
+
+.event-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+
+.event-btn {
+  flex: 1;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  border: none;
+  background-color: #1e90ff;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+
+}
+
+.event-btn:hover:not(:disabled) {
+  background-color: #1877dd;
+  transform: scale(1.03);
+}
+
+/* 🔴 COMPLET */
+.event-btn.full {
+  background-color: #e74c3c !important;
+  cursor: not-allowed;
+}
+
+.event-btn.full:disabled {
+  background-color: #e74c3c !important;
+}
+
+.event-btn:disabled {
+  opacity: 1;
+}
+
+
+.edit-btn {
+  padding: 0.6rem 0.9rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.edit-btn:hover {
+  background: #eee;
+}
+
+
+.delete-btn {
+  padding: 0.6rem 0.9rem;
+  border-radius: 10px;
+  border: none;
+  background: #e74c3c;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #c0392b;
+}
+
+
+@media (max-width: 600px) {
+  .event-actions {
+    flex-direction: column;
+  }
+}
+
+body.dark .delete-btn {
+  background: #e74c3c;
+}
+
+body.dark .event-card p {
+  color: white;
+}
+

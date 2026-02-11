@@ -1,0 +1,34 @@
+# Create a new react project #
+
+1. create a folder event-backend and cd in this folder
+2. type the following commands :
+3. npm init -y
+4. npm install express cors bcryptjs jsonwebtoken pg bcrypt dotenv multer
+5. cd ..
+6. npm create vite@latest event-frontend -- --template react-ts
+7. (npm run dev to launch the website)
+8. cd event-frontend
+9. npm install react sass react-hot-toast radix-ui react-dom react-router-dom
+10. npm install
+
+# Postgres #
+
+1. add the path of the postgres app (C:\Program Files\PostgreSQL\18\bin) in your windows PATH
+2. type de following commands :
+3. psql -U postgres
+4. type your postgres password
+5. CREATE DATABASE projet_event ;
+6. \c projet_event ;
+7. (use vs extension postgres sql (the second one) to visualize the database)
+8. Launch the sql script file "create_tables.sql" located in the /event-backend/migrations folder
+
+# Launch the project #
+
+1. Clone the git repository
+2. Navigate to the event-backend folder
+3. Type : npm install
+4. Type : npm run dev
+5. Then navigate to the event-frontend folder
+6. Type : npm install
+7. Type : npm run dev
+8. You can now launch the website at the following url : http://localhost:5173/

@@ -1,0 +1,83 @@
+.login-page {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.auth-card {
+  width: 360px;
+  background: #0b3c6d;
+  border-radius: 14px;
+  padding: 1.5rem;
+  color: white;
+  z-index: 1;
+}
+
+
+.tabs {
+  display: flex;
+  margin-bottom: 1.5rem;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.tab {
+  flex: 1;
+  padding: 0.7rem;
+  border: none;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.tab:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.tab.active {
+  background: #1e90ff;
+  font-weight: 600;
+}
+
+
+.PopUp {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  pointer-events: none;
+}
+
+
+.PopUp::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.popup-overlay {
+  position: relative;
+  z-index: 10000;
+  pointer-events: auto;
+
+}
+
+.popup-content {
+  background: white;
+  padding: 24px 32px;
+  border-radius: 12px;
+  width: 320px;
+  text-align: center;
+  color: #333;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
